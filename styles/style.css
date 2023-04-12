@@ -25,6 +25,7 @@ body {
   left: 0;
   right: 0;
   border-bottom: 1px solid seashell;
+  background: black;
 }
 
 .logo {
