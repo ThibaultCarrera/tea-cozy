@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  color: seashell;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+body {
+  background-color: black;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid seashell;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  float: left;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  float: right;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: underline;
+  padding: 10px;
+}
+
+/* Hero Banner */
+
+.hero {
+  position: relative;
+  height: 700px;
+  width: 1200px;
+  margin: 69px auto;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  width: 100%;
+  background-color: black;
+}
+
+.hero-text h1 {
+  margin-bottom: 0.5rem;
+  font-size: 32px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}
+
+/* Products */
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.products {
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.products h2 {
+  font-size: 32px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-item {
+  height: 300px;
+  width: calc(
+    33.33% - 40px
+  ); /* calcul de la largeur, avec une marge de 20px à gauche et à droite */
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-item img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.product-item p {
+  margin: 10px;
+}
+
+/* main section */
+
+.locations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 1200px;
+  background-image: url("../src/img-locations-background.jpg");
+  background-size: cover;
+}
+
+.card {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background: black;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.card h3 {
+  font-size: 32px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Contact */
+
+.contact {
+  height: 200px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+}
+
+/* footer */
+
+footer {
+  text-align: left;
+}
